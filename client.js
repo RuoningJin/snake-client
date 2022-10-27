@@ -20,16 +20,16 @@ const connect = function() {
     conn.write("Name: Ron");
   });
 
-  conn.on("connect", () => {
+  // conn.on("connect", () => {
 
-    // setInterval(() => {
-    //   conn.write("Move: up");
-    // }, 50);
-    // setTimeout(() => {
-    //   conn.write("Move: left");
-    // }, 50);
+  //   // setInterval(() => {
+  //   //   conn.write("Move: up");
+  //   // }, 50);
+  //   // setTimeout(() => {
+  //   //   conn.write("Move: left");
+  //   // }, 50);
 
-  });
+  // });
 
   
 
