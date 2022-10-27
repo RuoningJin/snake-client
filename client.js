@@ -1,5 +1,6 @@
 const net = require("net");
 
+
 // establishes a connection with the game server
 const connect = function() {
   const conn = net.createConnection({
@@ -18,6 +19,18 @@ const connect = function() {
     console.log('Successfully connected to game server');
     conn.write("Name: Ron");
   });
+
+  conn.on("connect", () => {
+
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 50);
+    // setTimeout(() => {
+    //   conn.write("Move: left");
+    // }, 50);
+
+  });
+
   
 
   return conn;
